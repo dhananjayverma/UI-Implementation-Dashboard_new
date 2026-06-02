@@ -11,6 +11,10 @@ A responsive sales analytics dashboard built with Vite, JavaScript, and CSS.
 - Tailwind CSS
 - PostCSS
 
+
+# deploy link <a href="https://dapper-baklava-4ac5a2.netlify.app/"> click here </a>
+
+
 ## Project Setup
 
 1. Install dependencies:
