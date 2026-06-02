@@ -1232,6 +1232,7 @@ svg {
   .topbar {
     grid-template-columns: minmax(180px, 1fr) minmax(300px, 480px) auto;
     gap: 16px;
+    padding: 0 28px;
   }
 
   .grid {
@@ -1318,11 +1319,17 @@ svg {
 
   .topbar {
     grid-template-columns: 1fr;
+    gap: 16px;
+    height: auto;
     padding: 24px;
   }
 
   .top-actions {
     justify-content: space-between;
+  }
+
+  .search-box {
+    width: 100%;
   }
 
   .sales-card,
@@ -1342,21 +1349,45 @@ svg {
     grid-template-columns: 1fr;
   }
 
+  .dashboard-shell.sidebar-collapsed {
+    grid-template-columns: 1fr;
+  }
+
   .sidebar {
     position: static;
-    display: block;
+    display: grid;
+    gap: 14px;
+    align-items: stretch;
     width: 100%;
     height: auto;
     padding: 18px;
   }
 
-  .brand {
-    justify-content: center;
-    margin-bottom: 18px;
+  .dashboard-shell.sidebar-collapsed .sidebar {
+    align-items: stretch;
+    width: 100%;
+    padding: 18px;
   }
 
-  .brand span:last-child {
+  .sidebar-header,
+  .dashboard-shell.sidebar-collapsed .sidebar-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .brand {
+    justify-content: flex-start;
+    margin-bottom: 0;
+  }
+
+  .brand span:last-child,
+  .dashboard-shell.sidebar-collapsed .brand span:last-child {
     display: inline;
+  }
+
+  .pro-card,
+  .dashboard-shell.sidebar-collapsed .pro-card {
+    display: none;
   }
 
   .nav-list {
@@ -1371,6 +1402,25 @@ svg {
     min-height: 56px;
   }
 
+  .dashboard-shell.sidebar-collapsed .nav-link {
+    flex: 0 0 56px;
+    width: 56px;
+  }
+
+  .nav-link span,
+  .dashboard-shell.sidebar-collapsed .nav-link span {
+    display: none;
+  }
+
+  .main-panel {
+    width: 100%;
+  }
+
+  .topbar {
+    gap: 16px;
+    padding: 22px 18px;
+  }
+
   .topbar h1 {
     font-size: 32px;
   }
@@ -1382,6 +1432,7 @@ svg {
   .top-actions {
     align-items: flex-start;
     flex-wrap: wrap;
+    gap: 14px;
   }
 
   .card {
@@ -1404,6 +1455,24 @@ svg {
     margin-top: 28px;
   }
 
+  .insight-card .y-axis-labels {
+    font-size: 12px;
+    min-width: 28px;
+  }
+
+  .insight-card .legend {
+    gap: 12px;
+    font-size: 13px;
+  }
+
+  .satisfaction-card .split-metric {
+    font-size: 14px;
+  }
+
+  .satisfaction-card .split-metric span {
+    min-width: 126px;
+  }
+
   .table {
     overflow-x: auto;
   }
@@ -1418,12 +1487,97 @@ svg {
     padding: 20px 14px;
   }
 
+  .topbar h1 {
+    font-size: 28px;
+  }
+
+  .search-box {
+    height: 50px;
+    padding: 0 16px;
+    border-radius: 12px;
+  }
+
+  .search-box input::placeholder {
+    font-size: 14px;
+  }
+
+  .language {
+    font-size: 14px;
+  }
+
+  .notify {
+    width: 42px;
+    height: 42px;
+  }
+
+  .profile .avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+  }
+
+  .grid {
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .card {
+    padding: 18px;
+    border-radius: 16px;
+  }
+
   .card-heading {
     display: grid;
   }
 
   .stats-row {
     grid-template-columns: 1fr;
+  }
+
+  .stat {
+    min-height: 108px;
+  }
+
+  .visitor-chart {
+    gap: 6px;
+  }
+
+  .insight-card .legend {
+    justify-content: flex-start;
+    font-size: 12px;
+  }
+
+  .insight-card .legend span {
+    width: 14px;
+    height: 14px;
+  }
+
+  .months {
+    font-size: 9px;
+  }
+
+  .satisfaction-card .split-metric {
+    justify-content: flex-start;
+    font-size: 13px;
+  }
+
+  .satisfaction-card .split-metric span,
+  .satisfaction-card .split-metric span + span {
+    min-width: 0;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .satisfaction-card .split-metric span + span::before {
+    display: none;
+  }
+
+  .target-summary {
+    grid-template-columns: 31px minmax(0, 1fr) auto;
+  }
+
+  .target-summary strong {
+    justify-self: end;
   }
 
   .language strong,

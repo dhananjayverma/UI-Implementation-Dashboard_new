@@ -137,6 +137,13 @@ Why it is used:
 - `renderMapCard()`: Shows the country sales mapping image.
 - `renderServiceCard()`: Shows the volume vs service level stacked bars.
 
+## Responsive Behavior
+
+- Desktop: Uses a full sidebar with a 12-column dashboard card grid.
+- Tablet: Shrinks the sidebar to icon-only mode and changes dashboard cards to a two-column layout.
+- Mobile: Stacks the dashboard into one column, converts the sidebar into a horizontal icon navigation, and reduces header/chart spacing so content stays readable.
+- Small mobile: Sales cards stack vertically, legends wrap cleanly, profile text is hidden, and wide tables become horizontally scrollable.
+
 ## Features Implemented
 
 - Sidebar navigation with active dashboard state.
