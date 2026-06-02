@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title desc">
+  <title id="title">Dummy profile avatar</title>
+  <desc id="desc">Illustrated profile picture placeholder.</desc>
+  <rect width="120" height="120" rx="26" fill="#dbeafe"/>
+  <circle cx="60" cy="48" r="25" fill="#f2b083"/>
+  <path d="M34 46c0-19 11-31 29-31 18 0 29 12 29 31-10-7-18-9-29-9-12 0-21 3-29 9Z" fill="#1f2937"/>
+  <path d="M32 120c3-29 15-45 28-45s25 16 28 45H32Z" fill="#2563eb"/>
+  <path d="M46 81c5 6 9 9 14 9s9-3 14-9c-4-4-8-6-14-6s-10 2-14 6Z" fill="#ffffff" opacity=".92"/>
+  <circle cx="50" cy="49" r="4" fill="#111827"/>
+  <circle cx="70" cy="49" r="4" fill="#111827"/>
+  <path d="M51 62c6 5 12 5 18 0" fill="none" stroke="#8b3f20" stroke-width="4" stroke-linecap="round"/>
+</svg>
