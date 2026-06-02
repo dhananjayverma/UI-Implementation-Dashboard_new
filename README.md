@@ -55,6 +55,7 @@ my-app/
 │   ├── main.js
 │   └── style.css
 ├── index.html
+├── netlify.toml
 ├── package.json
 ├── postcss.config.js
 ├── tailwind.config.js
@@ -144,6 +145,16 @@ Why it is used:
 - Tablet: Shrinks the sidebar to icon-only mode and changes dashboard cards to a two-column layout.
 - Mobile: Stacks the dashboard into one column, converts the sidebar into a horizontal icon navigation, and reduces header/chart spacing so content stays readable.
 - Small mobile: Sales cards stack vertically, legends wrap cleanly, profile text is hidden, and wide tables become horizontally scrollable.
+
+## Netlify Deployment
+
+The project includes `netlify.toml` so Netlify uses the correct production setup:
+
+- Build command: `npm run build`
+- Publish directory: `dist`
+- Redirect rule: sends all routes to `index.html`
+
+If deploying manually, upload the generated `dist` folder, not the project source folder.
 
 ## Features Implemented
 

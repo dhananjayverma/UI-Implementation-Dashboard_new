@@ -6,9 +6,11 @@ document.querySelector('#app').innerHTML = renderDashboard()
 const dashboardShell = document.querySelector('.dashboard-shell')
 const sidebarToggle = document.querySelector('.sidebar-toggle')
 
-sidebarToggle.addEventListener('click', () => {
-  const isCollapsed = dashboardShell.classList.toggle('sidebar-collapsed')
+if (dashboardShell && sidebarToggle) {
+  sidebarToggle.addEventListener('click', () => {
+    const isCollapsed = dashboardShell.classList.toggle('sidebar-collapsed')
 
-  sidebarToggle.setAttribute('aria-expanded', String(!isCollapsed))
-  sidebarToggle.setAttribute('aria-label', isCollapsed ? 'Expand sidebar' : 'Collapse sidebar')
-})
+    sidebarToggle.setAttribute('aria-expanded', String(!isCollapsed))
+    sidebarToggle.setAttribute('aria-label', isCollapsed ? 'Expand sidebar' : 'Collapse sidebar')
+  })
+}
